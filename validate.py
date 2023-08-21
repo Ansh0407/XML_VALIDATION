@@ -22,5 +22,5 @@ def validate_xml(xml_filename, xsd_filename):
 
 if __name__ == "__main__":
     xml_file = "2347212_lab4.xml"  
-    xsd_file = "2347212_lab4.xsd"
+    xsd_file = "2347212_lab4.xsd" 
     validate_xml(xml_file, xsd_file)
