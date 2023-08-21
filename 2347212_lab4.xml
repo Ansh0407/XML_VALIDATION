@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="2347212_lab4.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <products>
   <product>
     <id>P123</id>
     <name>Smartphone</name>
-    <price>299.99</price>
+    <price>499.99</price>
     <quantity>50</quantity>
     <category>Electronics</category>
   </product>
