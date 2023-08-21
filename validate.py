@@ -2,11 +2,10 @@ from lxml import etree
 
 def validate_xml(xml_filename, xsd_filename):
     try:
-        # Load the XML file and the XSD schema
+        
         xml_doc = etree.parse(xml_filename)
         xsd_doc = etree.parse(xsd_filename)
 
-        # Create a schema object and validate the XML against the schema
         schema = etree.XMLSchema(xsd_doc)
         is_valid = schema.validate(xml_doc)
 
@@ -22,6 +21,6 @@ def validate_xml(xml_filename, xsd_filename):
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    xml_file = "2347212_lab4.xml"  # Replace with your XML file's name
-    xsd_file = "2347212_lab4.xsd"  # Replace with your XSD schema file's name
+    xml_file = "2347212_lab4.xml"  
+    xsd_file = "2347212_lab4.xsd"
     validate_xml(xml_file, xsd_file)
